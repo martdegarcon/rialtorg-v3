@@ -1,0 +1,255 @@
+/*
+ * Final QA layer.
+ * This file is intentionally loaded after the Figma geometry stylesheet, so
+ * interaction fixes are not overwritten by the desktop artboard rules.
+ */
+
+main > section {
+  content-visibility: visible !important;
+  contain: none !important;
+  overflow: visible !important;
+}
+
+.nav { z-index: 100; }
+.nav__item { z-index: 101; }
+.nav__dropdown { z-index: 120; }
+.nav__items .nav__link,
+.nav__items .nav__link[data-roll-fill-initialized='true'],
+.nav__items a.nav__link--cta[data-roll-fill-initialized='true'] {
+  background: #fff !important;
+  color: rgba(37, 35, 33, 0.82) !important;
+  box-shadow: 0 4px 18px rgba(37, 35, 33, 0.08);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.nav__items .nav__link:hover,
+.nav__item:hover > .nav__link,
+.nav__item:focus-within > .nav__link,
+.nav--dark .nav__item:hover > .nav__link,
+.nav--dark .nav__item:focus-within > .nav__link,
+.nav--light .nav__item:hover > .nav__link,
+.nav--light .nav__item:focus-within > .nav__link {
+  background: #fff !important;
+  color: var(--ink) !important;
+  box-shadow: 0 8px 24px rgba(37, 35, 33, 0.12);
+}
+.nav__dropdown a:hover,
+.nav__dropdown a:focus-visible {
+  background: var(--orange) !important;
+  color: #fff;
+  outline: 0;
+}
+
+.stage,
+.rooms,
+.catalog,
+.projects,
+.documents,
+.news,
+.testimonials,
+.expert,
+.faq {
+  overflow: visible !important;
+}
+
+.process.is-horizontal-scroll-active .process__track {
+  overflow: hidden;
+  cursor: default;
+}
+
+.process.is-horizontal-scroll-active .process__rail {
+  will-change: transform;
+}
+
+.stage__grid,
+.rooms__grid,
+.catalog__grid,
+.projects__track,
+.documents__grid,
+.news__grid,
+.testimonials__grid {
+  padding-bottom: 48px !important;
+}
+
+.room-card,
+.product-card,
+.project-card,
+.news-card,
+.documents__grid article,
+.testimonials__grid article {
+  overflow: hidden;
+}
+
+.room-card,
+.process-card,
+.project-card,
+.product-card,
+.news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card { min-height: 462px !important; height: auto !important; }
+.product-card { min-height: 467px !important; height: auto !important; }
+.room-card { min-height: 596px !important; }
+.project-card { min-height: 548px !important; }
+.news-card { min-height: 474px !important; }
+.documents__grid article { min-height: 304px !important; }
+.testimonials__grid article { min-height: 570px !important; }
+
+.news-card h3,
+.news-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-card h3 {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.news-card p {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.directions__content > a {
+  border-radius: 0;
+}
+.directions__content > a:hover,
+.directions__content > a:focus-visible {
+  background: var(--orange) !important;
+  border-color: transparent !important;
+  color: #fff;
+}
+.directions__content > a:hover strong,
+.directions__content > a:hover span,
+.directions__content > a:focus-visible strong,
+.directions__content > a:focus-visible span {
+  color: #fff !important;
+}
+
+@media (min-width:1501px) {
+  .directions__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    padding-top: 96px;
+  }
+
+  .directions__content > p {
+    position: static;
+    margin: 0 0 30px;
+  }
+
+  .directions__content > a {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    min-height: 104px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .directions__content > a:hover,
+  .directions__content > a:focus-visible {
+    height: auto;
+  }
+}
+
+.documents__grid article {
+  transition: background .24s ease, transform .24s ease;
+}
+.documents__grid article:hover,
+.documents__grid article:focus-within {
+  background: var(--orange);
+  transform: translateY(-4px);
+}
+.documents__grid article:hover h3,
+.documents__grid article:focus-within h3 {
+  color: #fff;
+}
+.documents__grid article:hover .asset,
+.documents__grid article:focus-within .asset {
+  filter: saturate(1.08) contrast(1.03);
+}
+
+.slider-ui {
+  position: relative;
+  z-index: 5;
+}
+.slider-ui button:hover,
+.slider-ui button:focus-visible {
+  background: var(--orange);
+  box-shadow: 0 12px 30px rgba(255,100,48,.26);
+  outline: 0;
+}
+.slider-ui button:hover::before,
+.slider-ui button:focus-visible::before {
+  filter: brightness(0) invert(1);
+}
+
+.image-cta__copy > p:not(.eyebrow) + .button,
+.team__copy > p:not(.eyebrow) + .button {
+  margin-top: 40px !important;
+}
+
+.expert__content {
+  overflow: visible !important;
+}
+
+.accordion {
+  overflow: visible !important;
+}
+.accordion article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden !important;
+  min-height: 92px;
+  box-sizing: border-box;
+}
+.accordion article:not(.open) .accordion__answer {
+  display: none !important;
+  margin: 0;
+  padding: 0;
+}
+.accordion article.open {
+  overflow: hidden !important;
+}
+.accordion article.open .accordion__answer {
+  display: grid !important;
+}
+.accordion__answer {
+  display: grid !important;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  overflow: hidden !important;
+  transition: grid-template-rows .34s ease, opacity .24s ease !important;
+}
+.accordion__answer > p {
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 18px 70px 6px 0;
+}
+.accordion article.open .accordion__answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .room-card,
+  .process-card,
+  .product-card,
+  .project-card,
+  .news-card,
+  .documents__grid article,
+  .testimonials__grid article {
+    min-height: auto !important;
+    height: auto !important;
+  }
+}

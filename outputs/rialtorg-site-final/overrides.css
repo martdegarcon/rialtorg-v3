@@ -1,0 +1,223 @@
+/*
+ * Final QA layer.
+ * This file is intentionally loaded after the Figma geometry stylesheet, so
+ * interaction fixes are not overwritten by the desktop artboard rules.
+ */
+
+main > section {
+  content-visibility: visible !important;
+  contain: none !important;
+  overflow: visible !important;
+}
+
+.nav { z-index: 40; }
+.nav__item { z-index: 41; }
+.nav__dropdown { z-index: 80; }
+.nav__item:hover > .nav__link,
+.nav__item:focus-within > .nav__link {
+  background: rgba(255,255,255,.22);
+  color: #fff;
+}
+.nav__dropdown a:hover,
+.nav__dropdown a:focus-visible {
+  background: var(--orange) !important;
+  color: #fff;
+  outline: 0;
+}
+
+.stage,
+.rooms,
+.catalog,
+.projects,
+.documents,
+.news,
+.testimonials,
+.expert,
+.faq {
+  overflow: visible !important;
+}
+
+.process__track,
+.rooms__grid,
+.catalog__grid,
+.projects__track,
+.news__grid,
+.documents__grid,
+.testimonials__grid {
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+}
+
+.process__track::-webkit-scrollbar,
+.rooms__grid::-webkit-scrollbar,
+.catalog__grid::-webkit-scrollbar,
+.projects__track::-webkit-scrollbar,
+.news__grid::-webkit-scrollbar,
+.documents__grid::-webkit-scrollbar,
+.testimonials__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.stage__grid,
+.rooms__grid,
+.catalog__grid,
+.projects__track,
+.documents__grid,
+.news__grid,
+.testimonials__grid {
+  padding-bottom: 48px !important;
+}
+
+.room-card,
+.product-card,
+.project-card,
+.news-card,
+.documents__grid article,
+.testimonials__grid article {
+  overflow: hidden;
+}
+
+.room-card,
+.process-card,
+.project-card,
+.product-card,
+.news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card { min-height: 462px !important; height: auto !important; }
+.product-card { min-height: 467px !important; height: auto !important; }
+.room-card { min-height: 596px !important; }
+.project-card { min-height: 548px !important; }
+.news-card { min-height: 474px !important; }
+.documents__grid article { min-height: 304px !important; }
+.testimonials__grid article { min-height: 570px !important; }
+
+.news-card h3,
+.news-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-card h3 {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.news-card p {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.directions__content > a {
+  border-radius: 0;
+}
+.directions__content > a:hover,
+.directions__content > a:focus-visible,
+.directions__content > a.active {
+  background: var(--orange) !important;
+  border-color: transparent !important;
+  color: #fff;
+}
+.directions__content > a:hover strong,
+.directions__content > a:hover span,
+.directions__content > a:focus-visible strong,
+.directions__content > a:focus-visible span,
+.directions__content > a.active strong,
+.directions__content > a.active span {
+  color: #fff !important;
+}
+
+.documents__grid article {
+  transition: background .24s ease, transform .24s ease, box-shadow .24s ease;
+}
+.documents__grid article:hover,
+.documents__grid article:focus-within {
+  background: var(--orange);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(255,100,48,.16);
+}
+.documents__grid article:hover h3,
+.documents__grid article:focus-within h3 {
+  color: #fff;
+}
+.documents__grid article:hover .asset,
+.documents__grid article:focus-within .asset {
+  filter: saturate(1.08) contrast(1.03);
+}
+
+.slider-ui {
+  position: relative;
+  z-index: 5;
+}
+.slider-ui button:hover,
+.slider-ui button:focus-visible {
+  background: var(--orange);
+  box-shadow: 0 12px 30px rgba(255,100,48,.26);
+  outline: 0;
+}
+.slider-ui button:hover::before,
+.slider-ui button:focus-visible::before {
+  filter: brightness(0) invert(1);
+}
+
+.image-cta__copy > p:not(.eyebrow) + .button,
+.team__copy > p:not(.eyebrow) + .button {
+  margin-top: 40px !important;
+}
+
+.expert__content {
+  overflow: visible !important;
+}
+
+.accordion {
+  overflow: visible !important;
+}
+.accordion article {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden !important;
+}
+.accordion article.open {
+  overflow: hidden !important;
+}
+.accordion__answer {
+  display: grid !important;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 0 !important;
+  overflow: hidden !important;
+  transition: grid-template-rows .34s ease, opacity .24s ease, margin-top .34s ease !important;
+}
+.accordion__answer > p {
+  min-height: 0;
+  overflow: hidden;
+}
+.accordion article.open .accordion__answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 18px !important;
+}
+
+@media (max-width:700px) {
+  .stage__grid,
+  .rooms__grid,
+  .catalog__grid,
+  .projects__track,
+  .documents__grid,
+  .news__grid,
+  .testimonials__grid {
+    padding-bottom: 28px !important;
+  }
+
+  .room-card { min-height: 460px !important; }
+  .process-card { min-height: 360px !important; }
+  .product-card { min-height: 440px !important; }
+  .project-card { min-height: 430px !important; }
+  .news-card { min-height: 410px !important; }
+  .documents__grid article { min-height: 260px !important; }
+  .testimonials__grid article { min-height: 430px !important; }
+}

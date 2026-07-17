@@ -1,0 +1,54 @@
+.hero__media{background-image:url("assets/images/Rectangle%201.png")}
+
+.stage__grid .feature-tile:nth-child(1){background-image:url("assets/images/connect-1.png")}
+.stage__grid .feature-tile:nth-child(2){background-image:url("assets/images/connect-2.png")}
+.stage__grid .feature-tile:nth-child(3){background-image:url("assets/images/connect-3.png")}
+.stage__grid .feature-tile:nth-child(4){background-image:url("assets/images/connect-4.png")}
+
+.process-card:nth-child(1) .asset{background-image:url("assets/images/a50fa19e8b4595bdfb429c7133fb77d3aa72071d.png")}
+.process-card:nth-child(2) .asset{background-image:url("assets/images/d2e8d0e3368cb9068067af9b9c1e07878e90b279.png")}
+.process-card:nth-child(3) .asset{background-image:url("assets/images/82d6ba6b95e0fa37cfae47cda7f139f381f7143c.png")}
+.process-card:nth-child(4) .asset{background-image:url("assets/images/ea643edc5c54ef91ba9a9f9d47ee793a98ed34fd.png")}
+.process-card:nth-child(5) .asset{background-image:url("assets/images/062dbe034c38cedd930ada50eee9f5bb66a04140.png")}
+.process-card:nth-child(6) .asset{background-image:url("assets/images/00f639078cebc3be4c2cbaa01db80c18c758ed9b.png")}
+
+.product-card:nth-child(1) .asset{background-image:url("assets/images/45fef591586256c3174435922ff64f88886a1f43.png")}
+.product-card:nth-child(2) .asset{background-image:url("assets/images/1456c06883c6ed77d2c6b5b9eb72213f7431b0c2.png")}
+.product-card:nth-child(3) .asset{background-image:url("assets/images/f9a4c21191c6ce317461f1132a8856eaeb16674c.png")}
+.product-card:nth-child(4) .asset{background-image:url("assets/images/cea2ae3c24663a3ef212722a41f805e79f718b62.png")}
+.product-card:nth-child(5) .asset{background-image:url("assets/images/6e84ab2a613bab6606e2779ea1a4516d3089fd74.png")}
+.product-card:nth-child(6) .asset{background-image:url("assets/images/b194d6fb6a674dcf9117db761f549d4650863b59.png")}
+.product-card:nth-child(7) .asset{background-image:url("assets/images/d4cf01117380c77a487e34e72333a6d573ff0e56.png")}
+.product-card:nth-child(8) .asset{background-image:url("assets/images/740e0fb197d4b50cfcedb76cede08c60a50c8714.png")}
+
+.image-cta--first:not([data-turnkey-rotator-ready]) .image-cta__media{background-image:url("assets/images/turnkey.png");background-position:center;background-size:cover;background-repeat:no-repeat}
+.room-card:nth-child(1) .asset{background-image:url("assets/images/9b4e9d63f04aae80f91df27e6404b7b8bbda1512.png")}
+.room-card:nth-child(2) .asset{background-image:url("assets/images/789c93dc3d9f7b0ab2b071963c11ca5751a5e36b.png")}
+.room-card:nth-child(3) .asset{background-image:url("assets/images/3c81018acd0c51dfd0be05d5588f8b1859d5c9c7.png")}
+.room-card:nth-child(4) .asset{background-image:url("assets/images/22d422479ede8acce42da1d613b7b61ea0a145a9.png")}
+.room-card:nth-child(5) .asset{background-image:url("assets/images/ba0db067d0d76aacc69e847d65b28faee42ab5c2.png")}
+.room-card:nth-child(6) .asset{background-image:url("assets/images/06c364a2ff93500ca0f5d02acb61de0bbb4289ca.png")}
+
+.production__media{background-image:url("assets/images/ea643edc5c54ef91ba9a9f9d47ee793a98ed34fd.png");background-position:center}
+.team .image-cta__media{background-image:url("assets/images/05d5a05b938bbf5430370eaa6f3b793389799175.png");background-position:center;background-size:cover;background-repeat:no-repeat}
+.project-card:nth-child(3n+1) .asset{background-image:url("assets/images/d31e84a7f6668850705128c2f87f892afb8eb17c.png")}
+.project-card:nth-child(3n+2) .asset{background-image:url("assets/images/7c4b6bc3937295f65da02bb0d5438de094ee6810.png")}
+.project-card:nth-child(3n) .asset{background-image:url("assets/images/b055c3457b302522f96d80714689c112ca2af80c.png")}
+.directions__media{background-image:url("assets/images/fcc53b4786387cf9b75b26b2c4048c9a1c75a025.png")}
+
+.news-card:nth-child(1) .asset{background-image:url("assets/images/7c4b6bc3937295f65da02bb0d5438de094ee6810.png")}
+.news-card:nth-child(2) .asset{background-image:url("assets/images/d31e84a7f6668850705128c2f87f892afb8eb17c.png")}
+.news-card:nth-child(3) .asset{background-image:url("assets/images/60f9ac95824823b7e1ec47ab61907a5eb53d882b.png")}
+.news-card:nth-child(4) .asset{background-image:url("assets/images/b055c3457b302522f96d80714689c112ca2af80c.png")}
+
+.documents__grid article:nth-child(1) .asset{background-image:url("assets/images/f2d5a7a2809b22d3a31e6aa38c5fc7b0a9a42f7b.png")}
+.documents__grid article:nth-child(2) .asset{background-image:url("assets/images/ed4d27c27fe50e7bdf2a70d21f2a9a516b2e0da9.png")}
+.documents__grid article:nth-child(3) .asset{background-image:url("assets/images/48d84b8925028e8eb7277e82127576e68c82fc30.png")}
+.documents__grid article:nth-child(4) .asset{background-image:url("assets/images/00f639078cebc3be4c2cbaa01db80c18c758ed9b.png")}
+.documents__grid article:nth-child(5) .asset{background-image:url("assets/images/ab6b2d10b2c913d3046d18ac06c69d00dfc8345d.png")}
+.documents__grid article:nth-child(6) .asset{background-image:url("assets/images/eb095ce7d0b65ad3897fa54725d1b15bcc85a72e.png")}
+.testimonials__grid article:nth-child(1) .asset{background-image:url("assets/images/f2d5a7a2809b22d3a31e6aa38c5fc7b0a9a42f7b.png")}
+.testimonials__grid article:nth-child(2) .asset{background-image:url("assets/images/ed4d27c27fe50e7bdf2a70d21f2a9a516b2e0da9.png")}
+.testimonials__grid article:nth-child(3) .asset{background-image:url("assets/images/48d84b8925028e8eb7277e82127576e68c82fc30.png")}
+.testimonials__grid article:nth-child(4) .asset{background-image:url("assets/images/eb095ce7d0b65ad3897fa54725d1b15bcc85a72e.png")}
+.expert__media{background-image:url("assets/images/expert-team.png");background-position:center}

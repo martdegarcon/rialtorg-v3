@@ -402,6 +402,14 @@
     height: auto;
   }
 
+  main > section {
+    margin-top: 200px;
+  }
+
+  main > section.stage {
+    margin-top: 0;
+  }
+
   .image-cta__inner {
     padding: 120px 0 32px;
     flex-direction: column;
@@ -524,6 +532,30 @@
     gap: 24px;
     min-height: 0 !important;
     padding: 100px 0 32px;
+  }
+
+  .team__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    position: static;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .team__stats,
+  .team__copy,
+  .team__quote {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
   }
 
   .team__stats {

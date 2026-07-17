@@ -8,7 +8,7 @@
 .process-card:nth-child(1) .asset{background-image:url("assets/images/a50fa19e8b4595bdfb429c7133fb77d3aa72071d.png")}
 .process-card:nth-child(2) .asset{background-image:url("assets/images/d2e8d0e3368cb9068067af9b9c1e07878e90b279.png")}
 .process-card:nth-child(3) .asset{background-image:url("assets/images/82d6ba6b95e0fa37cfae47cda7f139f381f7143c.png")}
-.process-card:nth-child(4) .asset{background-image:url("assets/images/ea643edc5c54ef91ba9a9f9d47ee793a98ed34fd.png")}
+.process-card:nth-child(4) .asset{background-image:url("assets/images/20b7109f785501c98c023a4d6da7ebbe57975d1f.png")}
 .process-card:nth-child(5) .asset{background-image:url("assets/images/062dbe034c38cedd930ada50eee9f5bb66a04140.png")}
 .process-card:nth-child(6) .asset{background-image:url("assets/images/00f639078cebc3be4c2cbaa01db80c18c758ed9b.png")}
 
@@ -29,8 +29,9 @@
 .room-card:nth-child(5) .asset{background-image:url("assets/images/ba0db067d0d76aacc69e847d65b28faee42ab5c2.png")}
 .room-card:nth-child(6) .asset{background-image:url("assets/images/06c364a2ff93500ca0f5d02acb61de0bbb4289ca.png")}
 
-.production__media{background-image:url("assets/images/ea643edc5c54ef91ba9a9f9d47ee793a98ed34fd.png");background-position:center}
+.production__media{background-image:url("assets/images/production-workshop.png");background-position:center;background-size:cover;background-repeat:no-repeat}
 .team .image-cta__media{background-image:url("assets/images/05d5a05b938bbf5430370eaa6f3b793389799175.png");background-position:center;background-size:cover;background-repeat:no-repeat}
+.production-service .image-cta__media{background-image:url("assets/images/production-craftsman.png");background-position:center;background-size:cover;background-repeat:no-repeat}
 .project-card:nth-child(3n+1) .asset{background-image:url("assets/images/d31e84a7f6668850705128c2f87f892afb8eb17c.png")}
 .project-card:nth-child(3n+2) .asset{background-image:url("assets/images/7c4b6bc3937295f65da02bb0d5438de094ee6810.png")}
 .project-card:nth-child(3n) .asset{background-image:url("assets/images/b055c3457b302522f96d80714689c112ca2af80c.png")}
@@ -47,8 +48,8 @@
 .documents__grid article:nth-child(4) .asset{background-image:url("assets/images/00f639078cebc3be4c2cbaa01db80c18c758ed9b.png")}
 .documents__grid article:nth-child(5) .asset{background-image:url("assets/images/ab6b2d10b2c913d3046d18ac06c69d00dfc8345d.png")}
 .documents__grid article:nth-child(6) .asset{background-image:url("assets/images/eb095ce7d0b65ad3897fa54725d1b15bcc85a72e.png")}
-.testimonials__grid article:nth-child(1) .asset{background-image:url("assets/images/f2d5a7a2809b22d3a31e6aa38c5fc7b0a9a42f7b.png")}
-.testimonials__grid article:nth-child(2) .asset{background-image:url("assets/images/ed4d27c27fe50e7bdf2a70d21f2a9a516b2e0da9.png")}
-.testimonials__grid article:nth-child(3) .asset{background-image:url("assets/images/48d84b8925028e8eb7277e82127576e68c82fc30.png")}
-.testimonials__grid article:nth-child(4) .asset{background-image:url("assets/images/eb095ce7d0b65ad3897fa54725d1b15bcc85a72e.png")}
+.testimonials__grid article:nth-child(1) .asset{background-image:url("assets/images/testimonial-1.png")}
+.testimonials__grid article:nth-child(2) .asset{background-image:url("assets/images/testimonial-2.png")}
+.testimonials__grid article:nth-child(3) .asset{background-image:url("assets/images/testimonial-3.png")}
+.testimonials__grid article:nth-child(4) .asset{background-image:url("assets/images/testimonial-4.png")}
 .expert__media{background-image:url("assets/images/expert-team.png");background-position:center}

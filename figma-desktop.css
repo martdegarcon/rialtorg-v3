@@ -48,35 +48,61 @@
   .section-head--three { grid-template-columns: 428px minmax(0,809px) 1fr; gap: 16px; }
   .section-head--three > .button { margin-top: 66px; }
 
-  main { position: relative; height: 17717px; }
+  main { position: relative; height: 22184px; }
   main > section { position: absolute; left: 0; width: 100%; content-visibility: visible; contain: none; overflow: visible; }
   .image-cta--first, .team { position: absolute; }
 
-  /* Global section positions minus the 1080px hero. */
+  /* Global section positions with 200px gaps between sections. */
   .stage { top: 0; height: 1329px; padding: 200px 0 0; }
-  .process { top: 1329px; height: 980px; padding: 200px 0 0; }
-  .directions { top: 2309px; height: 1218px; padding: 200px 0 0; }
-  .image-cta--first { top: 3527px; height: 1080px; }
-  .rooms { top: 4607px; height: 1640px; padding: 200px 0 0; }
-  .catalog { top: 6247px; height: 1651px; padding: 200px 0 0; }
-  .production { top: 7898px; height: 1053px; padding: 80px 0; }
-  .team { top: 9151px; height: 1080px; }
+  .process { top: 1529px; height: 980px; padding: 200px 0 0; }
+  .production-service.team { top: 2709px; height: 1080px; }
+  .directions { top: 3989px; height: 1218px; padding: 200px 0 0; }
+  .image-cta--first { top: 5407px; height: 1080px; }
+  .rooms { top: 6687px; height: 1640px; padding: 200px 0 0; }
+  .catalog { top: 8527px; height: 1651px; padding: 200px 0 0; }
+  .production { top: 10378px; height: 1053px; padding: 80px 0; }
+  .team:not(.production-service) { top: 11631px; height: 1080px; }
   .team.image-cta {
     height: 1080px;
     min-height: 1080px;
     overflow: hidden;
   }
   .team .team__inner {
+    position: relative;
+    display: block;
     min-height: 0;
     height: 100%;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .projects { top: 10231px; height: 1316px; padding: 200px 0 0; z-index: 11; }
-  .documents { top: 11547px; height: 989px; padding: 200px 0 0; z-index: 10; }
-  .expert { top: 12536px; height: 894px; padding: 0; z-index: 10; }
-  .news { top: 13630px; height: 915px; padding: 100px 0 0; z-index: 10; }
-  .faq { top: 14545px; height: 1213px; padding: 200px 0 0; z-index: 10; }
-  .testimonials { top: 15758px; height: 988px; padding: 200px 0 0; z-index: 10; }
-  .request { top: 16846px; height: 871px; padding: 100px 0 0; z-index: 10; }
+
+  .team__footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 48px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .team__stats { position: absolute; top: 80px; left: 0; right: auto; width: fit-content; max-width: 100%; z-index: 1; }
+  .team__stats div { flex: none; }
+  .team__stats span { font-size: 24px; }
+  .team__copy { position: static; width: 872px; margin: 0; flex: 0 1 872px; }
+  .team__copy h2 { width: 872px; font-size: 52px; }
+  .team__copy > p:not(.eyebrow) { width: 751px; }
+  .team__quote { position: static; width: 487px; margin: 0; flex: 0 0 487px; font-size: 24px; }
+  .projects { top: 12911px; height: 1316px; padding: 200px 0 0; z-index: 11; }
+  .documents { top: 14427px; height: 989px; padding: 200px 0 0; z-index: 10; }
+  .expert { top: 15616px; height: 894px; padding: 0; z-index: 10; }
+  .news { top: 16710px; height: 915px; padding: 100px 0 0; z-index: 10; }
+  .faq { top: 17825px; height: 2100px; padding: 200px 0 0; z-index: 10; }
+  .testimonials { top: 20125px; height: 988px; padding: 200px 0 0; z-index: 12; }
+  .request { top: 21313px; height: 871px; padding: 100px 0 0; z-index: 10; }
 
   .stage .section-intro { width: 1316px; max-width: none; }
   .stage .section-intro h2 { width: 1316px; }
@@ -119,11 +145,32 @@
   .directions__content > a:focus-visible { height: 104px; padding: 24px; border: 0; }
   .directions__content span { font-size: 20px; }
 
-  .image-cta--first .image-cta__inner { display: block; padding: 0; }
-  .image-cta--first .image-cta__copy { position: absolute; left: 0; top: 531px; width: 872px; }
+  .image-cta--first .image-cta__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+  }
+  .image-cta--first .image-cta__copy {
+    position: static;
+    top: auto;
+    width: 872px;
+    flex: 0 1 872px;
+  }
   .image-cta--first .image-cta__copy h2 { width: 872px; font-size: 52px; }
   .image-cta--first .image-cta__copy > p:not(.eyebrow) { width: 668px; margin-top: 40px; }
-  .image-cta--first .image-cta__note { position: absolute; left: 1205px; top: auto; bottom: 80px; width: auto; font-size: 24px; }
+  .image-cta--first .image-cta__note {
+    position: static;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    width: auto;
+    font-size: 24px;
+    flex: 0 0 auto;
+    align-self: flex-end;
+  }
 
   .rooms .section-intro h2 { width: 914px; }
   .rooms .section-intro > p, .catalog .section-intro > p { width: 741px; }
@@ -139,16 +186,9 @@
   .production__media { height: 893px; }
   .production__content h2 { width: 642px; }
   .production__content > p:not(.eyebrow) { width: 695px; max-width: none; }
-  .production .line-list { width: 695px; }
-  .production .button { margin-top: 0; }
+  .production .line-list { width: 695px; margin-bottom: 40px; }
+  .production .button { margin-top: 40px; }
   .production { position: absolute; }
-
-  .team__stats { top: 80px; }
-  .team__stats span { font-size: 24px; }
-  .team__copy { top: 565px; bottom: auto; width: 872px; }
-  .team__copy h2 { width: 872px; font-size: 52px; }
-  .team__copy > p:not(.eyebrow) { width: 751px; }
-  .team__quote { right: 0; bottom: 80px; width: 487px; font-size: 24px; }
 
   .projects .section-head--three { position: relative; grid-template-columns: 428px 809px 1fr; }
   .projects .section-head--three > .button { position: absolute; top: 66px; right: 0; margin-top: 0; z-index: 2; }
@@ -192,12 +232,12 @@
   .news-card p { font-size: 20px; }
   .news__grid { transform: translateY(2px); }
 
-  .faq__grid, .request__grid { grid-template-columns: 872px 872px; gap: 16px; }
+  .faq__grid, .request__grid { grid-template-columns: 872px 872px; gap: 16px; align-items: stretch; }
   .faq__content h2 { width: 809px; }
   .faq__content > p { width: 835px; max-width: none; margin-bottom: 64px; }
-  .faq__side, .request__side { position: relative; }
+  .faq__side, .request__side { position: relative; display: flex; flex-direction: column; align-self: stretch; min-height: 100%; }
   .faq__side > .eyebrow { margin-top: 12px; }
-  .faq__side .contact { position: absolute; left: 0; top: 800px; width: 588px; margin: 0; }
+  .faq__side .contact { position: static; top: auto; left: auto; width: 588px; margin: auto 0 0; }
   .faq__side .button { display: none; }
   .accordion { gap: 16px; }
   .accordion article { min-height: 92px; height: auto; }
@@ -282,21 +322,24 @@
 /* Keep the Figma section sequence on responsive layouts too. */
 @media (max-width: 1500px) {
   main { display: flex; flex-direction: column; position: static; height: auto; }
-  main > section { position: static; left: auto; top: auto; height: auto; content-visibility: visible; contain: none; overflow: visible; }
+  main > section { position: static; left: auto; top: auto; height: auto; content-visibility: visible; contain: none; overflow: visible; margin-top: 200px; }
+  main > section.stage { margin-top: 0; }
+  main > section.faq { overflow: visible; }
   .nav__items { position: static; left: auto; top: auto; }
   .stage { order: 1; }
   .process { order: 2; }
-  .directions { order: 3; }
-  .image-cta--first { order: 4; }
-  .rooms { order: 5; }
-  .catalog { order: 6; }
-  .production { order: 7; }
-  .team { order: 8; }
-  .projects { order: 9; }
-  .documents { order: 10; }
-  .expert { order: 11; }
-  .news { order: 12; }
-  .faq { order: 13; }
-  .testimonials { order: 14; }
-  .request { order: 15; }
+  .production-service { order: 3; }
+  .directions { order: 4; }
+  .image-cta--first { order: 5; }
+  .rooms { order: 6; }
+  .catalog { order: 7; }
+  .production { order: 8; }
+  .team { order: 9; }
+  .projects { order: 10; }
+  .documents { order: 11; }
+  .expert { order: 12; }
+  .news { order: 13; }
+  .faq { order: 14; }
+  .testimonials { order: 15; }
+  .request { order: 16; }
 }
